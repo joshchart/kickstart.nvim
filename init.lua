@@ -27,6 +27,8 @@ vim.keymap.set('n', '<leader>Y', [["+Y]])
 -- Delete and not store to vim clipboard
 vim.keymap.set({ 'n', 'v' }, '<leader>d', [["_d]])
 
+vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 
