@@ -11,6 +11,10 @@ vim.api.nvim_set_keymap('v', '>', '>gv', {})
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
+-- Keeps cursor in center of window while nevigating by half page
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+
 -- Delete highlighted word into void register then paste original
 vim.keymap.set('x', '<leader>p', [["_dP]], { desc = '[p]aste w/o vim clipboard' })
 
