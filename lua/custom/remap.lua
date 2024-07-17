@@ -34,3 +34,4 @@ vim.keymap.set('n', '<leader>lr', ':Leet run<CR>', { desc = 'Run LeetCode proble
 vim.keymap.set('n', '<leader>lg', ':Leet lang<CR>', { desc = 'Change LeetCode language' })
 vim.keymap.set('n', '<leader>ls', ':Leet submit<CR>', { desc = 'Submit LeetCode solution' })
 vim.keymap.set('n', '<leader>ll', ':Leet list<CR>', { desc = 'List LeetCode problems' })
+vim.keymap.set('n', '<leader>le', ':Leet exit<CR>', { desc = 'Exit LeetCode' })
