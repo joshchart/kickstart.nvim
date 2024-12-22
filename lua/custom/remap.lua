@@ -1,5 +1,3 @@
-vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = '[p]roject [v]iew' })
-
 -- Move text up and down
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
@@ -27,11 +25,3 @@ vim.keymap.set('n', '<leader>Y', [["+Y]], { desc = '[Y]ank line to OS clipboard'
 vim.keymap.set({ 'n', 'v' }, '<leader>d', [["_d]], { desc = '[d]elete w/o vim clipboard' })
 
 vim.keymap.set('n', '<leader>r', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-
--- Remaps for Leetcode.nvim
-vim.keymap.set('n', '<leader>l', ':Leet<CR>', { desc = 'Open LeetCode dashboard' })
-vim.keymap.set('n', '<leader>lr', ':Leet run<CR>', { desc = 'Run LeetCode problem' })
-vim.keymap.set('n', '<leader>lg', ':Leet lang<CR>', { desc = 'Change LeetCode language' })
-vim.keymap.set('n', '<leader>ls', ':Leet submit<CR>', { desc = 'Submit LeetCode solution' })
-vim.keymap.set('n', '<leader>ll', ':Leet list<CR>', { desc = 'List LeetCode problems' })
-vim.keymap.set('n', '<leader>le', ':Leet exit<CR>', { desc = 'Exit LeetCode' })
