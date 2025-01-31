@@ -73,8 +73,8 @@ if vim.g.vscode then
   vim.keymap.set({ 'n', 'x' }, '<C-k>', "<Cmd>call VSCodeNotify('workbench.action.navigateUp')<CR>", opts)
   vim.keymap.set({ 'n', 'x' }, '<C-h>', "<Cmd>call VSCodeNotify('workbench.action.navigateLeft')<CR>", opts)
   vim.keymap.set({ 'n', 'x' }, '<C-l>', "<Cmd>call VSCodeNotify('workbench.action.navigateRight')<CR>", opts)
-  -- Require the vscode module
 
+  -- Require the vscode module
   local vscode = require 'vscode'
 
   -- Define a function to split the editor
@@ -92,6 +92,8 @@ if vim.g.vscode then
   vim.keymap.set({ 'n', 'x' }, '<leader>v', function()
     split 'v'
   end, opts)
+
+  vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = '[p]roject [v]iew' })
 else
   vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = '[p]roject [v]iew' })
 
