@@ -4,6 +4,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.opt.swapfile = false
+
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
@@ -48,10 +50,10 @@ vim.opt.scrolloff = 10
 -- vim.opt.colorcolumn = '80'
 
 -- Use spaces instead of tabs
--- vim.opt.expandtab = true -- Convert tabs to spaces
--- vim.opt.tabstop = 4 -- Width of a tab character
--- vim.opt.shiftwidth = 4 -- Number of spaces to use for each step of (auto)indent
--- vim.opt.softtabstop = 4 -- Number of spaces Neovim uses for <Tab> in insert mode
+vim.opt.expandtab = true -- Convert tabs to spaces
+vim.opt.tabstop = 4 -- Width of a tab character
+vim.opt.shiftwidth = 4 -- Number of spaces to use for each step of (auto)indent
+vim.opt.softtabstop = 4 -- Number of spaces Neovim uses for <Tab> in insert mode
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
@@ -95,7 +97,7 @@ if vim.g.vscode then
 
   vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = '[p]roject [v]iew' })
 else
-  vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = '[p]roject [v]iew' })
+  -- vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = '[p]roject [v]iew' })
 
   -- Remaps for Leetcode.nvim
   vim.keymap.set('n', '<leader>l', ':Leet<CR>', { desc = 'Open LeetCode dashboard' })
