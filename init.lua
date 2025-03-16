@@ -202,6 +202,12 @@ require('lazy').setup({
       return not vim.g.vscode
     end,
   },
+  {
+    import = 'custom.plugins',
+    cond = function()
+      return not vim.g.vscode
+    end,
+  },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
