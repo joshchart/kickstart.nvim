@@ -216,6 +216,9 @@ return {
           end,
         },
       }
+
+      -- Enable Dafny LSP (uses nvim-lspconfig's built-in config from lsp/dafny.lua)
+      vim.lsp.enable('dafny')
     end,
   },
 }
