@@ -3,6 +3,7 @@ return {
     'nvim-telescope/telescope.nvim',
     event = 'VimEnter',
     branch = 'master',
+    commit = '5255aa27c422de944791318024167ad5d40aad20',
     dependencies = {
       'nvim-lua/plenary.nvim',
       { -- If encountering errors, see telescope-fzf-native README for installation instructions
